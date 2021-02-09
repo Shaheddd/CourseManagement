@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE5EA"
+    tools:context=".EditHeadmasterActivity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="265dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Edit Headmaster"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="serif"
+        android:text="User ID"
+        android:textAlignment="center"
+        android:textColor="#131313"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/view_user_ID"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="serif"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_user_ID" />
+
+    <EditText
+        android:id="@+id/edit_headmaster_firstName"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="textPersonName"
+        android:text="Edit First Name"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="serif"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_headmaster_firstName" />
+
+    <EditText
+        android:id="@+id/edit_headmaster_lastName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="textPersonName"
+        android:text="Edit Last Name"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:fontFamily="serif"
+        android:layout_marginTop="0dp"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_headmaster_lastName" />
+
+    <EditText
+        android:id="@+id/edit_headmaster_address"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="text"
+        android:text="Edit Address"
+        android:textAlignment="center"
+        android:layout_marginTop="0dp"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="serif"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_headmaster_address" />
+
+    <EditText
+        android:id="@+id/edit_headmaster_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:inputType="text"
+        android:text="Edit Phone Number"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/update_user_btn"
+        android:layout_width="201dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        android:backgroundTint="#35AED1"
+        android:fontFamily="serif-monospace"
+        android:text="Update"
+        android:textColor="#090000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_headmaster_phone_number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

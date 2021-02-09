@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="425dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="15dp"
+    android:backgroundTint="#D5ECED"
+    app:cardMaxElevation="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="7dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="View Courses"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="139dp"
+            android:layout_height="141dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toEndOf="@+id/manage_course_courseName"
+            app:layout_constraintTop_toBottomOf="@+id/manage_course_type"
+            app:srcCompat="@drawable/online_course" />
+
+        <TextView
+            android:id="@+id/manage_course_courseDescription"
+            android:layout_width="267dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="11dp"
+            android:fontFamily="serif-monospace"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/edit_course"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/manage_course_courseID"
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif-monospace"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#100F0F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/manage_course_courseName"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/manage_course_courseName"
+            android:layout_width="235dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="serif-monospace"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/manage_course_courseDescription"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/manage_course_type"
+            android:layout_width="188dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="serif-monospace"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/manage_course_courseID"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/edit_course"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="28dp"
+            android:background="#9FD363"
+            android:fontFamily="serif-monospace"
+            android:text="Edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/delete_course" />
+
+        <Button
+            android:id="@+id/delete_course"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="28dp"
+            android:background="#EA617A"
+            android:fontFamily="serif-monospace"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
